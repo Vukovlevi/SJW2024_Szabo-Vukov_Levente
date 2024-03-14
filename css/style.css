@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap");
+
+:root {
+  --light-blue: #1283b9;
+  --dark-blue: #06435f;
+}
+
+.header {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/balaton_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white !important;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+footer {
+  font-family: "Marhey", sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 3px;
+  text-shadow: 5px 5px 10px black;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+h2 {
+  text-decoration: underline;
+  color: var(--light-blue);
+  font-variant: small-caps;
+}
+
+nav {
+  background-color: var(--dark-blue) !important;
+}
+
+.shadow-img {
+  box-shadow: 1px 1px 3px var(--dark-blue);
+}
+
+.custom-table {
+  width: 80%;
+  box-shadow: 1px 1px 10px var(--dark-blue);
+  border-spacing: 10px;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.img-grid-elem {
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+.img-grid-elem:hover {
+  opacity: 1;
+}
+
+.balaton {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.dunakanyar {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.tiszato {
+  grid-column: 3/4;
+  grid-row: 1;
+}
